@@ -1,7 +1,6 @@
 import java.util.Scanner;
-import java.util.SortedMap;
 
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
@@ -12,15 +11,18 @@ public class Main {
         String firstMiddle = scanner1.nextLine();
         System.out.println("Введите отчество");
         String lastName = scanner2.nextLine();
-        if (firstName.isBlank()==true){
+        if (firstName.isBlank() == true) {
             throw new RuntimeException("Вы не ввели имя");
-        }if (firstMiddle.isBlank()==true){
+        }
+        if (firstMiddle.isBlank() == true) {
             throw new RuntimeException("Вы не ввели фамилию");
-        }if (lastName.isBlank()==true){
+        }
+        if (lastName.isBlank() == true) {
             throw new RuntimeException("Вы не ввели отчество");
         }
 
-         String fullName = firstName+" "+firstMiddle+" "+lastName;
-        System.out.println(fullName);
+        String fullName = firstName + " " + firstMiddle + " " + lastName;
+
+        System.out.println(fullName.toUpperCase());
     }
 }
